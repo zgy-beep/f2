@@ -49,7 +49,3 @@ async def test_get_all_aweme_id():
     # 测试批量提取的结果
     result = await AwemeIdFetcher.get_all_aweme_id(urls)
     assert result == expected_results, f"预期: {expected_results}, 实际: {result}"
-
-
-if __name__ == "__main__":
-    pytest.main(["-v", "-s", __file__])
